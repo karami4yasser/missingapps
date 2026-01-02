@@ -1,9 +1,9 @@
-// App Data - Add your apps here
+// App Data - Real Data from missingapps
 const apps = [
     {
         id: 1,
         title: "Flight Awards - Points & Miles",
-        description: "A revolutionary app that helps you organize your daily tasks with AI-powered suggestions.",
+        description: "Find flight award availability easily. Track points and miles to book your dream trip for less.",
         icon: "https://play-lh.googleusercontent.com/TlzVFT2rRXzYFANmi71WlaCHq1Jg4OdQnh8a5AprBjJ7AcTsSMOLRIe2AAuAcAnhHDn5dRga9J_x_ep2jZ6-Mg=w480-h960-rw",
         appStoreLink: "https://apps.apple.com/us/app/flight-awards-points-miles/id6754783959",
         playStoreLink: "https://play.google.com/store/apps/details?id=com.missingapps.flightawards"
@@ -11,12 +11,27 @@ const apps = [
     {
         id: 2,
         title: "Sugarless - Quit Sugar Habit",
-        description: "Immersive puzzle game with stunning visuals and mind-bending challenges.",
+        description: "Overcome sugar addiction with AI-powered tracking, personalized plans, and progress monitoring.",
         icon: "https://play-lh.googleusercontent.com/uuRyzyvbmh-1oeIpsCpkyYamLf7V4vP35COOyk8zrWigdRZigsSejqyQ63HirEmfdQ=w480-h960-rw",
         appStoreLink: "https://apps.apple.com/us/app/sugarless-quit-sugar/id6752667417",
         playStoreLink: "https://play.google.com/store/apps/details?id=com.missingapps.quitsugar"
     },
-
+    {
+        id: 3,
+        title: "Quit Drinking - Quit Alcohol",
+        description: "Achieve sobriety with a soft quitting mode, AI coach consultation, and comprehensive health tracking.",
+        icon: "https://placehold.co/200x200/18181B/FFFFFF/png?text=Quit+Drinking",
+        appStoreLink: "#", // Add App Store Link if available
+        playStoreLink: "https://play.google.com/store/apps/details?id=com.missingapps.quitdrinking"
+    },
+    {
+        id: 4,
+        title: "Save Money - Savings Tracker",
+        description: "Track your savings goals with customizable boxes, progress visualization, and financial insights.",
+        icon: "https://placehold.co/200x200/18181B/FFFFFF/png?text=Save+Money",
+        appStoreLink: "#", // Add App Store Link if available
+        playStoreLink: "https://play.google.com/store/apps/details?id=com.missingapps.savemoney"
+    }
 ];
 
 // Icons (Simple SVG paths)
@@ -34,6 +49,23 @@ function renderApps() {
         const card = document.createElement('article');
         card.className = 'app-card';
 
+        // Handle missing links gracefully
+        const appStoreBtn = app.appStoreLink !== '#'
+            ? `<a href="${app.appStoreLink}" target="_blank" rel="noopener noreferrer" class="store-btn">
+                 ${icons.apple} App Store
+               </a>`
+            : `<span class="store-btn disabled" style="opacity: 0.5; cursor: default;">
+                 ${icons.apple} Coming Soon
+               </span>`;
+
+        const playStoreBtn = app.playStoreLink !== '#'
+            ? `<a href="${app.playStoreLink}" target="_blank" rel="noopener noreferrer" class="store-btn">
+                 ${icons.google} Play Store
+               </a>`
+            : `<span class="store-btn disabled" style="opacity: 0.5; cursor: default;">
+                 ${icons.google} Coming Soon
+               </span>`;
+
         card.innerHTML = `
             <div class="app-icon-wrapper">
                 <img src="${app.icon}" alt="${app.title} Icon" class="app-icon" loading="lazy">
@@ -41,14 +73,8 @@ function renderApps() {
             <h3 class="app-title">${app.title}</h3>
             <p class="app-description">${app.description}</p>
             <div class="store-buttons">
-                <a href="${app.appStoreLink}" target="_blank" rel="noopener noreferrer" class="store-btn">
-                    ${icons.apple}
-                    App Store
-                </a>
-                <a href="${app.playStoreLink}" target="_blank" rel="noopener noreferrer" class="store-btn">
-                    ${icons.google}
-                    Play Store
-                </a>
+                ${appStoreBtn}
+                ${playStoreBtn}
             </div>
         `;
         fragment.appendChild(card);
