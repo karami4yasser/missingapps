@@ -28,7 +28,7 @@ const apps = [
         id: 3,
         title: "Quit Drinking - Quit Alcohol",
         description: "Achieve sobriety with a soft quitting mode, AI coach consultation, and comprehensive health tracking.",
-        icon: "https://placehold.co/200x200/18181B/FFFFFF/png?text=Quit+Drinking",
+        icon: "https://play-lh.googleusercontent.com/ADnpkCzh1xu1eF-3sAliIs7L9eYpCFxBZ-GwuPm2_SG3AO7tdLMzau8vbPjK_AKaj4-IKRv2CQ0gcaryVfQUFg=w480-h960-rw",
         appStoreLink: "#", // Add App Store Link if available
         playStoreLink: "https://play.google.com/store/apps/details?id=com.missingapps.quitdrinking"
     },
@@ -36,7 +36,7 @@ const apps = [
         id: 4,
         title: "Save Money - Savings Tracker",
         description: "Track your savings goals with customizable boxes, progress visualization, and financial insights.",
-        icon: "https://placehold.co/200x200/18181B/FFFFFF/png?text=Save+Money",
+        icon: "https://play-lh.googleusercontent.com/6q6JyHy4OffalL7igpqKn6HCG1SlhCMsAXg3Rx7tsN5p29mQiq_BBA_E8Vj5oKTGiEMU82TeYn7tra5Amzy5jw=w480-h960-rw",
         appStoreLink: "#", // Add App Store Link if available
         playStoreLink: "https://play.google.com/store/apps/details?id=com.missingapps.savemoney"
     }
