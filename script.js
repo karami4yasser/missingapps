@@ -9,6 +9,14 @@ const apps = [
         playStoreLink: "https://play.google.com/store/apps/details?id=com.missingapps.flightawards"
     },
     {
+        id: 4,
+        title: "FocusNow: App Blocker & Focus",
+        description: "Find flight award availability easily. Track points and miles to book your dream trip for less.",
+        icon: "https://play-lh.googleusercontent.com/IMtEh_k9mDPxLmUGK2Y9x2XC8vMzvJj3x-FmG-sp1XB0nIgWXdTNx0BQ5U7MGTBNXUSBUylTmmz8Gv5RYLqeEg=w480-h960-rw",
+        appStoreLink: "https://apps.apple.com/us/app/flight-awards-points-miles/id6754783959",
+        playStoreLink: "https://play.google.com/store/apps/details?id=com.missingapps.focusapp"
+    },
+    {
         id: 2,
         title: "Sugarless - Quit Sugar Habit",
         description: "Overcome sugar addiction with AI-powered tracking, personalized plans, and progress monitoring.",
