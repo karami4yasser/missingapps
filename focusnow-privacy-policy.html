@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - FocusNow</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .privacy-content {
+            max-width: 800px;
+            margin: 0 auto;
+            color: var(--text-secondary);
+        }
+        
+        .privacy-section {
+            margin-bottom: 2.5rem;
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: var(--border-radius-lg);
+            padding: 2rem;
+        }
+
+        .privacy-section h2 {
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .privacy-section h3 {
+            color: var(--text-primary);
+            font-size: 1.2rem;
+            margin: 1.5rem 0 0.75rem;
+        }
+
+        .privacy-section p {
+            margin-bottom: 1rem;
+        }
+
+        .privacy-section ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-bottom: 1rem;
+        }
+
+        .privacy-section li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .privacy-section li::before {
+            content: "•";
+            color: var(--text-accent);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            color: var(--text-accent);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .icon {
+            font-size: 1.25em;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-glow"></div>
+
+    <div class="container">
+        <header class="hero-section" style="padding-bottom: 2rem;">
+            <h1><span class="gradient-text">Privacy Policy</span></h1>
+            <p class="subtitle">Effective Date: January 1, 2026</p>
+        </header>
+
+        <main class="privacy-content">
+            <div class="privacy-section">
+                <p>FocusNow requires specific permissions to function effectively as a distraction blocker. All blocking happens <strong class="highlight">locally on your device</strong>.</p>
+            </div>
+
+            <div class="privacy-section">
+                <h2><span class="icon">⚠️</span> Accessibility Service API</h2>
+                <p>FocusNow uses the Accessibility Service API to detect which app is currently active on your screen. This allows us to:</p>
+                <ul>
+                    <li>Instantly show a blocking overlay when you open a distracting app you have chosen to restrict.</li>
+                    <li>Prevent "Strict Mode" sessions from being cancelled prematurely.</li>
+                </ul>
+                <p><strong>Note:</strong> No personal data is collected, stored, or transmitted via the Accessibility Service. It is strictly used to identify the package name of the foreground app for blocking purposes.</p>
+            </div>
+
+            <div class="privacy-section">
+                <h2><span class="icon">🔒</span> VPN Service</h2>
+                <p>To provide robust network blocking, FocusNow utilizes the Android VPN Service. This creates a local loopback (blackhole) connection that blocks internet access ONLY for the specific apps you have selected.</p>
+                <p>Your traffic is <strong>NOT routed to any remote server</strong> and remains 100% private and on-device.</p>
+            </div>
+
+            <div class="privacy-section">
+                <h2><span class="icon">📱</span> Draw Over Other Apps</h2>
+                <p>This permission is required to display the blocking screen (overlay) on top of distracting apps when you try to access them during a focus session.</p>
+            </div>
+
+            <div class="privacy-section">
+                <h2><span class="icon">🔔</span> Notifications</h2>
+                <p>We need this permission to show you a persistent notification ("Focus Mode Active") which keeps the blocking service running reliably in the background.</p>
+            </div>
+
+            <div class="privacy-section">
+                <h2><span class="icon">📊</span> Usage Stats</h2>
+                <p>This permission allows FocusNow to see <em>only</em> how much time you spend in each app (e.g., "30 mins on Instagram"). We use this to calculate your daily limits and show you productivity reports.</p>
+                <p>We <strong>do NOT</strong> see what you do inside the apps (no messages, no passwords).</p>
+            </div>
+
+            <div class="privacy-section">
+                <h2><span class="icon">⏳</span> Foreground Service</h2>
+                <p>This ensures the app doesn't get "killed" by the system while you are in a Focus Session, allowing the timer to run accurately.</p>
+            </div>
+            
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <a href="index.html" class="back-link">← Back to Portfolio</a>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 FocusNow. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
