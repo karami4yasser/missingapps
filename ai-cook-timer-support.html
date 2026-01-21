@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support & Data Deletion - AI Cook Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .support-content {
+            max-width: 800px;
+            margin: 0 auto;
+            color: var(--text-secondary);
+        }
+
+        .support-section {
+            margin-bottom: 2.5rem;
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: var(--border-radius-lg);
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .support-section h2 {
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .support-section p {
+            margin-bottom: 1.5rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            color: var(--text-accent);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .back-link:hover {
+            text-decoration: none;
+            transform: translateX(-5px);
+            color: var(--text-primary);
+        }
+
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.85rem 1.5rem;
+            background: var(--accent-gradient);
+            color: white;
+            text-decoration: none;
+            border-radius: var(--border-radius-sm);
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px -10px rgba(99, 102, 241, 0.5);
+        }
+
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px -10px rgba(99, 102, 241, 0.6);
+        }
+
+        .icon {
+            font-size: 1.25em;
+        }
+
+        .highlight {
+            color: var(--text-accent);
+            font-weight: 600;
+        }
+
+        .deletion-steps {
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: var(--border-radius-md);
+            padding: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .deletion-steps ol {
+            padding-left: 1.5rem;
+            margin-bottom: 0;
+        }
+
+        .deletion-steps li {
+            margin-bottom: 0.75rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background-glow"></div>
+
+    <div class="container fade-in-up">
+        <header class="hero-section" style="padding-bottom: 2rem;">
+            <h1><span class="gradient-text">Support & Data</span></h1>
+            <p class="subtitle">AI Cook Timer Help Center</p>
+        </header>
+
+        <main class="support-content">
+            <div class="support-section">
+                <h2><span class="icon">🆘</span> Get in Touch</h2>
+                <p>Having trouble with AI Cook Timer? Whether it's a bug, a suggestion, or a question about a recipe,
+                    we're here to help.</p>
+                <a href="mailto:support@aicooktimer.com" class="contact-btn">Email Support</a>
+            </div>
+
+            <div class="support-section">
+                <h2><span class="icon">🗑️</span> Data Deletion Request</h2>
+                <p>We value your privacy and provide a simple way to delete any data associated with your account or
+                    device usage. Since AI Cook Timer primarily stores data <strong class="highlight">locally</strong>,
+                    you can often handle this yourself:</p>
+
+                <div class="deletion-steps">
+                    <p><strong>To delete all local data:</strong></p>
+                    <ol>
+                        <li>Open the <strong class="highlight">Settings</strong> app on your device.</li>
+                        <li>Go to <strong class="highlight">Apps</strong> or <strong
+                                class="highlight">Applications</strong>.</li>
+                        <li>Select <strong class="highlight">AI Cook Timer</strong>.</li>
+                        <li>Tap <strong class="highlight">Storage</strong> or <strong class="highlight">Clear
+                                Data</strong>.</li>
+                        <li>Confirm the deletion.</li>
+                    </ol>
+                </div>
+
+                <p style="margin-top: 1.5rem;">If you have opted into cloud backups or want to ensure any diagnostic
+                    data we might have is removed, please contact our support team:</p>
+                <p>Email: <a href="mailto:support@aicooktimer.com?subject=Data Deletion Request"
+                        class="highlight">support@aicooktimer.com</a></p>
+                <p>Please include "Data Deletion Request" in the subject line and provide any relevant account
+                    indicators (such as your User ID found in settings).</p>
+            </div>
+
+            <div class="support-section">
+                <h2><span class="icon">🕒</span> Response Time</h2>
+                <p>Our small team typically responds within 24-48 hours during business days. We appreciate your
+                    patience!</p>
+            </div>
+
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <a href="index.html" class="back-link">← Back to Portfolio</a>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 AI Cook Timer. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>

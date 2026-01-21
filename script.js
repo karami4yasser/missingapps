@@ -14,7 +14,20 @@ const apps = [
         description: "Find flight award availability easily. Track points and miles to book your dream trip for less.",
         icon: "https://play-lh.googleusercontent.com/IMtEh_k9mDPxLmUGK2Y9x2XC8vMzvJj3x-FmG-sp1XB0nIgWXdTNx0BQ5U7MGTBNXUSBUylTmmz8Gv5RYLqeEg=w480-h960-rw",
         appStoreLink: "https://apps.apple.com/us/app/flight-awards-points-miles/id6754783959",
-        playStoreLink: "https://play.google.com/store/apps/details?id=com.missingapps.focusapp"
+        playStoreLink: "https://play.google.com/store/apps/details?id=com.missingapps.focusapp",
+        privacyPolicy: "focusnow-privacy-policy.html",
+        termsOfService: "focusnow-terms.html"
+    },
+    {
+        id: 5,
+        title: "AI Cook Timer",
+        description: "Your perfect kitchen companion. AI-powered cooking times and smart alarms for perfectly cooked meals every time.",
+        icon: "assets/ai-cook-timer-icon.png",
+        appStoreLink: "#",
+        playStoreLink: "#",
+        privacyPolicy: "ai-cook-timer-privacy-policy.html",
+        termsOfService: "ai-cook-timer-terms.html",
+        supportPage: "ai-cook-timer-support.html"
     },
     {
         id: 2,
@@ -74,6 +87,14 @@ function renderApps() {
                  ${icons.google} Coming Soon
                </span>`;
 
+        const legalLinks = `
+            <div class="legal-links" style="margin-top: 1rem; font-size: 0.75rem; display: flex; gap: 1rem;">
+                ${app.privacyPolicy ? `<a href="${app.privacyPolicy}" style="color: var(--text-secondary); text-decoration: none;">Privacy</a>` : ''}
+                ${app.termsOfService ? `<a href="${app.termsOfService}" style="color: var(--text-secondary); text-decoration: none;">Terms</a>` : ''}
+                ${app.supportPage ? `<a href="${app.supportPage}" style="color: var(--text-secondary); text-decoration: none;">Support</a>` : ''}
+            </div>
+        `;
+
         card.innerHTML = `
             <div class="app-icon-wrapper">
                 <img src="${app.icon}" alt="${app.title} Icon" class="app-icon" loading="lazy">
@@ -84,6 +105,7 @@ function renderApps() {
                 ${appStoreBtn}
                 ${playStoreBtn}
             </div>
+            ${legalLinks}
         `;
         fragment.appendChild(card);
     });

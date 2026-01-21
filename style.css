@@ -193,6 +193,14 @@ h1 {
     fill: currentColor;
 }
 
+.legal-links a {
+    transition: color 0.2s ease;
+}
+
+.legal-links a:hover {
+    color: var(--text-accent) !important;
+}
+
 /* Animations */
 .fade-in-up {
     opacity: 0;
