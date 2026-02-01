@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,7 @@
             margin: 0 auto;
             color: var(--text-secondary);
         }
-        
+
         .privacy-section {
             margin-bottom: 2.5rem;
             background: var(--card-bg);
@@ -67,7 +68,7 @@
             text-decoration: none;
             font-weight: 500;
         }
-        
+
         .back-link:hover {
             text-decoration: underline;
         }
@@ -77,6 +78,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="background-glow"></div>
 
@@ -88,46 +90,67 @@
 
         <main class="privacy-content">
             <div class="privacy-section">
-                <p>FocusNow requires specific permissions to function effectively as a distraction blocker. All blocking happens <strong class="highlight">locally on your device</strong>.</p>
+                <p>FocusNow requires specific permissions to function effectively as a distraction blocker. All blocking
+                    happens <strong class="highlight">locally on your device</strong>.</p>
             </div>
 
             <div class="privacy-section">
                 <h2><span class="icon">⚠️</span> Accessibility Service API</h2>
-                <p>FocusNow uses the Accessibility Service API to detect which app is currently active on your screen. This allows us to:</p>
+                <p>FocusNow uses the Accessibility Service API to detect which app is currently active on your screen.
+                    This allows us to:</p>
                 <ul>
-                    <li>Instantly show a blocking overlay when you open a distracting app you have chosen to restrict.</li>
+                    <li>Instantly show a blocking overlay when you open a distracting app you have chosen to restrict.
+                    </li>
                     <li>Prevent "Strict Mode" sessions from being cancelled prematurely.</li>
                 </ul>
-                <p><strong>Note:</strong> No personal data is collected, stored, or transmitted via the Accessibility Service. It is strictly used to identify the package name of the foreground app for blocking purposes.</p>
+                <p><strong>Note:</strong> No personal data is collected, stored, or transmitted via the Accessibility
+                    Service. It is strictly used to identify the package name of the foreground app for blocking
+                    purposes.</p>
             </div>
 
             <div class="privacy-section">
                 <h2><span class="icon">🔒</span> VPN Service</h2>
-                <p>To provide robust network blocking, FocusNow utilizes the Android VPN Service. This creates a local loopback (blackhole) connection that blocks internet access ONLY for the specific apps you have selected.</p>
-                <p>Your traffic is <strong>NOT routed to any remote server</strong> and remains 100% private and on-device.</p>
+                <p>To provide robust network blocking, FocusNow utilizes the Android VPN Service. This creates a local
+                    loopback (blackhole) connection that blocks internet access ONLY for the specific apps you have
+                    selected.</p>
+                <p>Your traffic is <strong>NOT routed to any remote server</strong> and remains 100% private and
+                    on-device.</p>
             </div>
 
             <div class="privacy-section">
                 <h2><span class="icon">📱</span> Draw Over Other Apps</h2>
-                <p>This permission is required to display the blocking screen (overlay) on top of distracting apps when you try to access them during a focus session.</p>
+                <p>This permission is required to display the blocking screen (overlay) on top of distracting apps when
+                    you try to access them during a focus session.</p>
             </div>
 
             <div class="privacy-section">
                 <h2><span class="icon">🔔</span> Notifications</h2>
-                <p>We need this permission to show you a persistent notification ("Focus Mode Active") which keeps the blocking service running reliably in the background.</p>
+                <p>We need this permission to show you a persistent notification ("Focus Mode Active") which keeps the
+                    blocking service running reliably in the background.</p>
             </div>
 
             <div class="privacy-section">
                 <h2><span class="icon">📊</span> Usage Stats</h2>
-                <p>This permission allows FocusNow to see <em>only</em> how much time you spend in each app (e.g., "30 mins on Instagram"). We use this to calculate your daily limits and show you productivity reports.</p>
+                <p>This permission allows FocusNow to see <em>only</em> how much time you spend in each app (e.g., "30
+                    mins on Instagram"). We use this to calculate your daily limits and show you productivity reports.
+                </p>
                 <p>We <strong>do NOT</strong> see what you do inside the apps (no messages, no passwords).</p>
             </div>
 
             <div class="privacy-section">
                 <h2><span class="icon">⏳</span> Foreground Service</h2>
-                <p>This ensures the app doesn't get "killed" by the system while you are in a Focus Session, allowing the timer to run accurately.</p>
+                <p>This ensures the app doesn't get "killed" by the system while you are in a Focus Session, allowing
+                    the timer to run accurately.</p>
             </div>
-            
+
+            <div class="privacy-section">
+                <h2><span class="icon">⚖️</span> Terms & EULA</h2>
+                <p>By using FocusNow, you also agree to the <a
+                        href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+                        style="color: var(--text-accent); text-decoration: none;">Apple Standard End User License
+                        Agreement (EULA)</a>.</p>
+            </div>
+
             <div style="text-align: center; margin-bottom: 4rem;">
                 <a href="index.html" class="back-link">← Back to Portfolio</a>
             </div>
@@ -138,4 +161,5 @@
         </footer>
     </div>
 </body>
+
 </html>
